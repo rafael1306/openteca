@@ -36,5 +36,10 @@ class UsuarioController extends Controller
         return view('meus_livros');
     }
 
+    public function fazerlogin()
+    {
+        dd("kuvoa sudasd");
+    }
+
 
 }

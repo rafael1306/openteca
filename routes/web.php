@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsuarioController;
 
 Route::get('/login', [UsuarioController::class, 'loginView']);
+Route::post('/fazer-login', [UsuarioController::class, 'fazerlogin']);
 
 Route::get('/', [UsuarioController::class, 'homeView']);
 
@@ -12,6 +13,7 @@ Route::get('/pesquisa', [UsuarioController::class, 'pesquisaView']);
 Route::get('/info', [UsuarioController::class, 'infoView']);
 
 Route::get('/cadastro', [UsuarioController::class, 'cadastroView']);
+
 
 
 
